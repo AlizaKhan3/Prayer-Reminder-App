@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
-    <title>Prayer Reminder - Login</title>
+    <title>Prayer Reminder - Signup</title>
 </head>
 
 <body>
@@ -50,10 +50,75 @@
                     </div>
                 </form>
 
+
+
+
+
+                <!-- SIGNUP FORM -->
+                <form action="" class="signup-form d-flex justify-content-center align-items-center flex-column">
+                    <h2 class="title mb-4"> Sign up</h2>
+                    <div class="input-field my-3">
+                        <i class="fa-solid fa-user text-center"></i>
+                        <input type="text" name="" id="" placeholder="Enter Your Username">
+                    </div>
+                    <div class="input-field my-3">
+                        <i class="fa-solid fa-envelope text-center"></i>
+                        <input type="email" name="" id="" placeholder="Enter Your Email">
+                    </div>
+
+                    <div class="input-field my-3">
+                        <i class="fas fa-unlock text-center"></i>
+                        <input type="password" name="" id="" placeholder="Password">
+                    </div>
+                    <div class="input-field my-1">
+                        <i class="fas fa-lock text-center"></i>
+                        <input type="password" name="" id="" placeholder="Confirm Password">
+                    </div>
+                    <input type="submit" value="SIGNUP" class="btn solid">
+                    <!-- Don't have an Account? Create Now. -->
+                    <p class="social-text">Already have an Account? <button href="index.html" class="social-text"
+                            style="color: #016f36; border: none; background-color: transparent;"> Login Now</button></p>
+
+                    <div class="social-media d-flex justify-content-center">
+                        <a href="#" class="social-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel d-flex flex-column align-items-end justify-content-around text-center">
+                <div class="content">
+                    <h3>New here?</h3>
+                    <p>Join now, and make prayers your habit!</p>
+                    <button class="btn transparent" id="signup-btn">Signup</button>
+                </div>
+                <img src="images/prayreminder.svg" class="image" alt="">
+            </div>
+
+            <div class="panel right-panel d-flex flex-column align-items-end justify-content-around text-center">
+                <div class="content">
+                    <h3>Already have an Account?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus deleniti recusandae eos porro aspernatur laudantium sit tempore cum quo! Alias voluptas quibusdam earum ratione assumenda ad modi quo minima tempora.</p>
+                    <button class="btn transparent" id="signup-btn">Login</button>
+                </div>
+                <img src="images/usignup.svg" class="image" alt="">
             </div>
         </div>
     </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>
