@@ -8,15 +8,93 @@
     position: relative;
     width:100% ;
     min-height: 100vh;
-    background-color: #3000ff;
     overflow: hidden;
 }
 
-.forms-container{
+/* .forms-container{
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: chocolate;
+} */
+
+.title{
+    font-weight: bolder;
+    color: #444;
 }
+
+.input-field{
+    max-width: 380px;
+    width: 100%;
+    height: 55px;
+    /* background-color: #01391c; */
+    background-color: transparent;
+    border-radius: 60px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    /* padding: 0.4rem; */
+}
+
+.input-field i {
+    line-height: 55px;
+    color: #01391c;
+    font-size: 1.1rem;
+}
+
+.input-field input{
+    background: none;
+    border: none;
+    outline: none;
+    /* line-height: 1; */
+    /* color: white; */
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.input-field input::placeholder{
+    color: #aeaeae;   
+}
+
+.btn{
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #80d7aa;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover{
+    background-color: #4ad88f;
+}
+
+.social-text{
+    padding: .7rem 0;
+    font-weight: 500;
+}
+
+.social-icon{
+    height: 50px;
+    width: 50px;
+    margin: 0 0.25rem;
+    border: 1px solid #333;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #333;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.social-icon:hover{
+    color: #4ad88f;
+}
+
+
+/* #01391c dark green  
+#80d7aa light green
+#c98d38 brown 
+#e6b920 gold */
