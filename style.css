@@ -22,6 +22,7 @@
     right: 48%;
     transform: translateY(-50%);
     z-index: 6;
+    transition: 1.8s ease-in-out ;
 }
 
 .forms-container{
@@ -185,6 +186,16 @@ form.signup-form{
 .right-panel .content, .right-panel .image{
     transform: translateX(800px);
 }
+
+.container.sign_up_mode:before{
+    transform: translate(100%, -50%);
+    right: 52%;
+}
+
+
+
+
+
 
 /* #01391c dark green  
 #80d7aa light green
