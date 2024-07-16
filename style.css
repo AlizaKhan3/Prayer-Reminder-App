@@ -179,12 +179,13 @@ form.signup-form{
 }
 
 .image{
-    width: 100%;
+    width: 40%;
 }
 
 .right-panel .content, .right-panel .image{
     transform: translateX(800px);
 }
+
 /* #01391c dark green  
 #80d7aa light green
 #c98d38 brown 
