@@ -242,9 +242,17 @@ form.signup-form{
     .container{
         min-height: 800px;
         height: 100vh;
+        /* width: 1500px; */
     }
-    .container::before{
-        display: none;
+    .container:before{
+        width: 1500px;
+        height: 1000px;
+        left: 30%;
+        bottom: 68%;
+        transform: translateX(-50%);
+        right: initial;
+        top: initial ;
+        transition: 2s ease-in-out;
     }
     .signin-signup{
         width: 100%;
@@ -253,20 +261,46 @@ form.signup-form{
         transform: translate(-50%, -100%);
     }
     .panels-container{
-        background-color: rgb(15, 34, 130);
-        z-index: 10;
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
     }
     .panel{
         flex-direction: row ;
         justify-content: space-around;
         align-items: center;
+        padding:2.5rem 8%;
+    }
+    .panel .content{
+        padding-right: 15%;
+    }
+    .panel h3{
+        font-size: 1.2rem;
+    }
+    .panel p{
+        font-size: 0.7rem;
+        padding: 0.5rem 0;
+    }
+    .btn.transparent{
+        width: 110px;
+        height: 35px;
+        font-size: 0.7rem;
     }
     .image{
         width: 200px;
     }
+    .left-panel{
+        grid-row: 1 / 2;
+    }
+    .right-panel{
+        grid-row: 3 / 4;
+    }
     .right-panel .content, .right-panel .image{
-        transform: translateX(0px);
+        transform: translateY(300px);
+    }
+    .container.sign_up_mode:before{
+        transform: translate(-50%, 100%);
+        bottom: 32%;
+        right: initial;
     }
 }
 
