@@ -218,6 +218,16 @@ form.signup-form{
     left: 25%;
 }
 
+.container.sign_up_mode form.signin-form{
+    z-index: 1;
+    opacity: 0;
+}
+
+.container.sign_up_mode form.signup-form{
+    z-index: 2;
+    opacity: 1;
+}
+
 
 
 
